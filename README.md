@@ -1,6 +1,6 @@
-### Git on galapagos
+## Git on galapagos
 
-__Creating a new repository called 'NewRepository' on galapagos__
+### Creating a new repository called 'NewRepository' on galapagos
 
 After logging onto galapagos run the following:
 
@@ -43,7 +43,7 @@ git push galapagos master
 
 That's it! That's enough to get you started, but there is much more on thorough documentation at  http://git-scm.com/book/en/Git-Basics. 
 
-__Automatically mirroring to github.com__
+### Automatically mirroring to github.com
 
 In order to view the code and revisions on https://github.com, you can mirror your galapagos repository on the github servers. To start, you'll need a github account and an ssh public key on galapagos. If you don't already have an ssh public key on galapagos, you can follow directions in the __Adding a ssh public key to galapagos__ section.
 
@@ -88,7 +88,7 @@ The `0 */2 * * *` before the script name indicates that the script should run ev
 
 Now your local machine will automatically update the github repository to whatever frequency you set in the cron job!
 
-__Adding an existing repository to galapagos__
+### Adding an existing repository to galapagos
 
 Create a bare repository on local machine and push to galapagos:
 
@@ -97,7 +97,7 @@ git clone --bare ExistingRepository project.git
 scp -r project.git <galapagos_username>@galapagos.colorado.edu:/opt/git
 ```
 
-__Adding a ssh public key to galapagos__
+### Adding a ssh public key to galapagos
 
 Instructions
 
